@@ -4,6 +4,7 @@ import Homework2 from "./homeworks/homework2/homework2.jsx";
 import Homework3 from "./homeworks/homework3/Homework3.jsx";
 import {useEffect, useState} from "react";
 import Homework4 from "./homeworks/homework4/Homework4.jsx";
+import Homework5 from "./homeworks/homework5/Homework5.jsx";
 
 function App() {
 
@@ -12,7 +13,8 @@ function App() {
             {/*<Homework1/>*/}
             {/*<Homework2/>*/}
             {/*<Homework3/>*/}
-            <Homework4/>
+            {/*<Homework4/>*/}
+            <Homework5/>
         </>
     )
 }
