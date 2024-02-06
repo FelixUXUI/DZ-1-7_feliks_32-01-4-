@@ -1,7 +1,7 @@
 import './App.css';
 import User from './components/user/User.jsx';
 import Modal from './components/modal/Modal.jsx';
-import { useState } from 'react';
+import {useState} from 'react';
 import Input from './components/input/Input.jsx';
 import Button from './components/button/Button.jsx';
 import Todo from './components/todo/Todo.jsx';
@@ -9,46 +9,27 @@ import TodoList from './components/TodoList/TodoList.jsx';
 
 
 function Homework3() {
-    const [ show, setShow ] = useState(false);
-    const [ input, setInput ] = useState('');
+    const [show, setShow] = useState(false);
+    const [input, setInput] = useState('');
     const [tasks, setTasks] = useState([
         {
-            id:1 ,
+            id: 1,
             task: 'coding'
         },
         {
-            id:2,
+            id: 2,
             task: 'eat'
         },
         {
-            id:3,
+            id: 3,
             task: 'sleep'
         }
     ])
-    // const tasks = [
-    //   {
-    //     id:1 ,
-    //     task: 'coding'
-    //   },
-    //   {
-    //     id:2,
-    //     task: 'eat'
-    //   },
-    //   {
-    //     id:3,
-    //     task: 'sleep'
-    //   }
-    // ];
+
     const handleShow = () => setShow(!show);
 
     const handleAdd = () => {
-        setTasks(prev => [ ...prev, {
-                id: tasks.length + 1,
-                task: input
-            }
-            ]
-        );
-        console.log(tasks);
+        setTasks([...tasks, {id: tasks.length + 1, task: input}]);
     };
 
     const onChangeInput = (event) => {
@@ -62,6 +43,7 @@ function Homework3() {
     // const b = [4,5,6]
     // console.log([...a,...b]);
 
+
     return (
         <div>
             {
@@ -71,7 +53,6 @@ function Homework3() {
                     onChangeInput={onChangeInput}
                     handleAdd={handleAdd}
                 >
-
                 </Modal>
             }
             <Button action={handleShow} text={'открыть'}/>
