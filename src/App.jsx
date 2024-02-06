@@ -6,6 +6,7 @@ import {useEffect, useState} from "react";
 import Homework4 from "./homeworks/homework4/Homework4.jsx";
 import Homework5 from "./homeworks/homework5/Homework5.jsx";
 import Homework6 from "./homeworks/homework6/Homework6.jsx";
+import Homework7 from "./homeworks/homework7/Homework7.jsx";
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
             {/*<Homework3/>*/}
             {/*<Homework4/>*/}
             {/*<Homework5/>*/}
-            <Homework6/>
+            {/*<Homework6/>*/}
+            <Homework7/>
         </>
     )
 }
